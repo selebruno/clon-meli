@@ -1,9 +1,9 @@
 
-import { GET_PRODUCTS,GET_DETAIL } from "./constants";
+import { GET_PRODUCTS,GET_DETAIL,RESET_DETAIL,RESET_PRODUCTS } from "./constants";
 
 const initialState = {
     products: [],
-    detail: []
+    detail: null
 }
 
 function reducer(state = initialState, action) {
@@ -18,6 +18,16 @@ function reducer(state = initialState, action) {
                             ...state,
                             detail: action.payload
                         }
+                            case RESET_DETAIL:
+                                return {
+                                    ...state,
+                                    detail: null
+                                }
+                                case RESET_PRODUCTS:
+                                return {
+                                    ...state,
+                                    products: []
+                                }
             default:
                 return state;
     }

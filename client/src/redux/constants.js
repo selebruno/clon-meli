@@ -1,2 +1,4 @@
 export const GET_PRODUCTS = 'GET_PRODUCTS'
 export const GET_DETAIL = 'GET_DETAIL'
+export const RESET_DETAIL = 'RESET_DETAIL'
+export const RESET_PRODUCTS = 'RESET_PRODUCTS'

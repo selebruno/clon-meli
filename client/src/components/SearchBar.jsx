@@ -1,27 +1,22 @@
 import React, { useState } from "react";
-import {Container, Stack, Box, Image, Text, Input, Icon, StackDivider} from "@chakra-ui/react";
+import {Container, Stack, Box, Image, Text, Input, Icon, StackDivider,Button} from "@chakra-ui/react";
 import {AiOutlineSearch,AiOutlineDown} from "react-icons/ai"
 import {GoLocation} from "react-icons/go"
 import {IoCartOutline} from "react-icons/io5"
-import { Link,useLocation,useHistory } from 'react-router-dom'
+import { Link,useHistory } from 'react-router-dom'
+import { resetDetail, resetProduct } from "../redux/actions";
 import { useDispatch } from "react-redux";
-import { getProducts } from "../redux/actions";
+
+
+
 
 
 export default function SearchBar() {
 
-
     const dispatch = useDispatch()
     const history = useHistory()
     const [input,setInput] = useState("")
-
-    function useQuery() {
-      return new URLSearchParams(useLocation().search);
-    }
-    let query = useQuery();
-    console.log(query)
-
-
+ 
 
     function handleChange(event){
         setInput(event.target.value)
@@ -29,12 +24,17 @@ export default function SearchBar() {
     
     function handleSubmit(e){
         e.preventDefault()
-        dispatch(getProducts(input))
-        history.push(`/items?title=${query.get('title')}`)
+        dispatch(resetDetail())
+        history.push(`/items?search=${input}`)
+    }
+
+    function handleReset(e){
+      dispatch(resetProduct())
     }
 
     return (
-        <Stack fontFamily="sans-serif" >
+      <>
+      <form onSubmit={(e)=>handleSubmit(e)}>
         <Box 
         backgroundColor="primary.500" 
         paddingTop={3}
@@ -47,6 +47,7 @@ export default function SearchBar() {
             <Link to='/'>
                 <Image 
                 cursor="pointer"
+                onClick={(e)=> handleReset(e)}
                 src="https://res.cloudinary.com/dbduj98i3/image/upload/v1634924370/logo_y1ctl4.png"
                 objectFit="contain" 
                 height={8}
@@ -58,26 +59,27 @@ export default function SearchBar() {
                 borderRadius="sm"
                 backgroundColor="white"
                 maxWidth={600}
+                maxHeight="2.5rem"
                 width="100%" 
                 direction="row" 
                 alignItems="center"
                 divider={<StackDivider />}>
-                <Input 
+                <Input
                 onChange={(e)=>handleChange(e)}
-                height={7}
                 paddingX={2}
                 fontSize="14px"
                 placeholder="Buscar productos,marcas y más..."
                 fontWeight="thin"
                 variant="unstyled"/>
+                <Button type="submit" backgroundColor="transparent" width="1rem" _hover="backgroundColor=transparent">
                 <Icon
-                onClick={(e)=>handleSubmit(e)} 
                 as={AiOutlineSearch} 
                 cursor="pointer"  
                 width={6} 
                 height={5} 
                 color="gray.400">
-                </Icon>
+                </Icon> 
+              </Button>
             </Stack>
             </Stack>
             <Stack 
@@ -131,6 +133,7 @@ export default function SearchBar() {
         <Container alignSelf="center" maxWidth="container.xl" paddingX={0}>
           </Container>
         </Box>
-      </Stack>
+        </form>
+      </>
   );
 };
