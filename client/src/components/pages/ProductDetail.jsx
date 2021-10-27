@@ -92,7 +92,7 @@ export default function ProductDetail(props) {
         <Stack
           position="absolute"
           top="30vh"
-          left="90vh"
+          left="100vh"
           width="3rem"
           height="3rem"
           marginTop="6vh"
