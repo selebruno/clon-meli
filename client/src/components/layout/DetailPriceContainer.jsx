@@ -19,7 +19,7 @@ export default function DetailPriceContainer({
   categories,
   price,
   available_quantity,
-}) {
+}){
   function randomInteger(min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
   }

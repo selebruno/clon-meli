@@ -1,6 +1,6 @@
 const { default: axios } = require("axios");
 const server = require("express").Router();
-require("dotenv").config();
+
 
 server.get("/items", async (req, res) => {
   try {

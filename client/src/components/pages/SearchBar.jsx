@@ -22,8 +22,8 @@ export default function SearchBar() {
   const history = useHistory();
   const [input, setInput] = useState("");
 
-  function handleChange(event) {
-    setInput(event.target.value);
+  function handleChange(e) {
+    setInput(e.target.value);
   }
 
   function handleSubmit(e) {
