@@ -16,11 +16,21 @@ Este proyecto fue diseñado para permitir al usuario navegar en distintas págin
 - Chakra UI
 - Node JS
 - Express JS
-- Jest
+
 
 ## Arrancando
 
-Para poder levantar la aplicación se requiere realizar los siguientes pasos:
+Se puede acceder a la aplicación funcionando a través del siguiente link:
+
+```
+https://test-front-meli.vercel.app/
+```
+
+
+
+## Desarrollando
+
+Para poder levantar la aplicación de manera local se requiere realizar los siguientes pasos:
 
 
 Descargar las dependencias corriendo:
@@ -28,9 +38,6 @@ Descargar las dependencias corriendo:
 ```
  npm i
 ```
-
-
-## Desarrollando
 
 Arrancar el servidor de desarrollo en las carpetas client y server con
 
@@ -44,10 +51,7 @@ Luego es posible ingresar al sitio web desde la siguiente URL
 http://localhost:3000/
 ```
 
-También se puede acceder mediante la URL del sitio web deployado
 
-```
-```
 
 
 
