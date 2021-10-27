@@ -33,12 +33,17 @@ https://test-front-meli.vercel.app/
 Para poder levantar la aplicación de manera local se requiere realizar los siguientes pasos:
 
 
-Descargar las dependencias corriendo:
+Descargar las dependencias corriendo tanto en la carpeta api como en client:
 
 ```
  npm i
 ```
 
+En Api, vamos a necesitar un archivo env en el que declaremos en qué puerto va a escuchar nuestro backend:
+
+```
+PORT = 3000
+```
 Arrancar el servidor de desarrollo en las carpetas client y server con
 
 ```
