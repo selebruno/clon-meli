@@ -1,10 +1,17 @@
-
-import { GET_PRODUCTS,GET_DETAIL,RESET_DETAIL,RESET_PRODUCTS } from "./constants";
+import {
+    GET_PRODUCTS,
+    GET_DETAIL,
+    RESET_DETAIL,
+    RESET_PRODUCTS,
+    SEARCH_UPADTE,
+    SEARCH_UPADTE_FALSE,
+} from "./constants";
 
 const initialState = {
     products: [],
-    detail: null
-}
+    detail: null,
+    searchUpdate: false,
+};
 
 function reducer(state = initialState, action) {
     switch (action.type) {
@@ -12,26 +19,35 @@ function reducer(state = initialState, action) {
             return {
                 ...state,
                 products: action.payload,
-            }
-            case GET_DETAIL:
-                        return {
-                            ...state,
-                            detail: action.payload
-                        }
-                            case RESET_DETAIL:
-                                return {
-                                    ...state,
-                                    detail: null
-                                }
-                                case RESET_PRODUCTS:
-                                return {
-                                    ...state,
-                                    products: []
-                                }
-            default:
-                return state;
+            };
+        case GET_DETAIL:
+            return {
+                ...state,
+                detail: action.payload,
+            };
+        case RESET_DETAIL:
+            return {
+                ...state,
+                detail: null,
+            };
+        case RESET_PRODUCTS:
+            return {
+                ...state,
+                products: [],
+            };
+        case SEARCH_UPADTE:
+            return {
+                ...state,
+                searchUpdate: true,
+            };
+        case SEARCH_UPADTE_FALSE:
+            return {
+                ...state,
+                searchUpdate: false,
+            };
+        default:
+            return state;
     }
-
 }
 
 export default reducer;
