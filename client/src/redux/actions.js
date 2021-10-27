@@ -11,7 +11,7 @@ import {
 export function getProducts(title) {
   return async function (dispatch) {
     const products = await axios.get(
-      `http://localhost:3001/api/items?q=${title}`
+      `/api/items?q=${title}`
     );
     dispatch({
       type: GET_PRODUCTS,
@@ -22,7 +22,7 @@ export function getProducts(title) {
 
 export function getProductDetail(id) {
   return async function (dispatch) {
-    const detail = await axios.get(`http://localhost:3001/api/items/${id}`);
+    const detail = await axios.get(`/api/items/${id}`);
     return dispatch({
       type: GET_DETAIL,
       payload: detail.data,

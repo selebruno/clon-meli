@@ -1,7 +1,7 @@
 const express = require('express');
 const morgan = require('morgan');
 const routes = require('./routes/index.js');
-
+const cors = require('cors')
 
 const server = express();
 
@@ -9,6 +9,7 @@ server.name = 'API';
 
 
 server.use(morgan('dev'));
+server.use(cors())
 server.use((req, res, next) => {
   res.header('Access-Control-Allow-Origin', '*'); 
   res.header('Access-Control-Allow-Credentials', 'true');
