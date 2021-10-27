@@ -18,10 +18,10 @@ export default function Products({
           justifyContent="left"
           alignItems="center"
           marginTop="2rem"
-          spacing={30}
+          spacing={10}
         >
           <Stack>
-            <Stack width="11rem" height="11rem">
+            <Stack width="16rem" height="11rem" alignItems="center">
               <Image height="inherit" width="fit-content" src={picture} />
             </Stack>
           </Stack>

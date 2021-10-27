@@ -37,7 +37,7 @@ export default function ProductList() {
             products.length > 0 ? 
             products.map(el => {
                 return (
-                     <Stack alignItems="left" marginLeft="50vh">          
+                     <Stack alignItems="left" marginLeft="35vh">          
                  <Products
                  id={el.items.map(item=> item.id)}
                  picture={el.items.map(item => item.picture)}
