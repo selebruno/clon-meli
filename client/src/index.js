@@ -12,7 +12,7 @@ import dotenv from "dotenv";
 dotenv.config();
 
 
-axios.defaults.baseURL = "https://frontend-test-meli.herokuapp.com" 
+axios.defaults.baseURL = "https://frontend-test-meli.herokuapp.com" || "http://localhost:3000"
 
 ReactDOM.render(
   <Provider store={store}>
