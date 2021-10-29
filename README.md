@@ -16,6 +16,7 @@ Este proyecto fue diseñado para permitir al usuario navegar en distintas págin
 - Chakra UI
 - Node JS
 - Express JS
+- Jest/Enzyme/chai
 
 
 ## Arrancando
@@ -23,7 +24,7 @@ Este proyecto fue diseñado para permitir al usuario navegar en distintas págin
 Se puede acceder a la aplicación funcionando a través del siguiente link:
 
 ```
-https://test-front-meli.vercel.app/
+https://test-front-meli-henna.vercel.app/
 ```
 
 
@@ -39,10 +40,11 @@ Descargar las dependencias corriendo tanto en la carpeta api como en client:
  npm i
 ```
 
-En Api, vamos a necesitar un archivo env en el que declaremos en qué puerto va a escuchar nuestro backend:
+En Api, vamos a necesitar un archivo env en el que declaremos en qué puerto va a escuchar nuestro backend y la url de la api:
 
 ```
 PORT = 3000
+API_URL = https://api.mercadolibre.com
 ```
 Arrancar el servidor de desarrollo en las carpetas client y server con
 
