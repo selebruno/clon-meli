@@ -2,19 +2,21 @@ const { default: axios } = require("axios");
 const server = require("express").Router();
 require("dotenv").config();
 
+const { API_URL } = process.env;
+
 server.get("/items", async (req, res) => {
   try {
     const q = req.query.q;
-    const apiUrl = await axios.get(
-      `https://api.mercadolibre.com/sites/MLA/search?q=${q}&limit=4`
+    const apiResults = await axios.get(
+      `${API_URL}/sites/MLA/search?q=${q}&limit=4`
     );
-    const infoNedeed = await apiUrl.data.results.map((result) => {
+    const infoNedeed = await apiResults.data.results.map((result) => {
       return {
         author: {
           id: result.seller.id,
           address: result.address.state_name,
         },
-        categories: apiUrl.data.filters.map((el) =>
+        categories: apiResults.data.filters.map((el) =>
           el.values.map((item) => item.name)
         ),
         items: [
@@ -45,9 +47,9 @@ server.get("/items", async (req, res) => {
 server.get("/items/:id", async (req, res) => {
   try { 
   const id = req.params.id;
-  const idApiPromise = axios.get(`https://api.mercadolibre.com/items/${id}`);
+  const idApiPromise = axios.get(`${API_URL}/items/${id}`);
   const idDescriptionPromise = axios.get(
-    `https://api.mercadolibre.com/items/${id}/description`
+    `${API_URL}/items/${id}/description`
   );
   const [idApi, idDescription] = await Promise.all([
     idApiPromise,
@@ -55,7 +57,7 @@ server.get("/items/:id", async (req, res) => {
   ]);
   const datosApi = idApi.data;
   const categoryApi = await axios.get(
-    `https://api.mercadolibre.com/categories/${datosApi.category_id}`
+    `${API_URL}/categories/${datosApi.category_id}`
   );
   const infoNedeed = {
     author: datosApi.seller_id,

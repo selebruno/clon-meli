@@ -7,13 +7,13 @@ import HomeButtons from './components/layout/HomeButtons/HomeButtons';
 
 function App() {
   return (
-    <div>
+    <>
      <Route  path= '/' component= {SearchBar}/>
      <Route  exact path='/' component={Slider}/>
      <Route  exact path='/' component={HomeButtons}/>
      <Route  exact path='/items' component={ProductList} />
      <Route  path='/items/:id' component={ProductDetail} />
-    </div>
+    </>
   );
 }
 

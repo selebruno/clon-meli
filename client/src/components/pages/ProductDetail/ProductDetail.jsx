@@ -92,15 +92,14 @@ export default function ProductDetail(props) {
           </Stack>
         </Stack>
       ) : (
+        <Stack alignItems="center" justifyContent="center">
         <Stack
-          position="absolute"
-          top="30vh"
-          left="100vh"
           width="3rem"
           height="3rem"
           marginTop="6vh"
         >
           <Image src="https://res.cloudinary.com/dbduj98i3/image/upload/v1635287448/loading-buffering_x968rg.gif" />
+        </Stack>
         </Stack>
       )}
     </>
