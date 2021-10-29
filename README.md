@@ -16,6 +16,7 @@ Este proyecto fue diseñado para permitir al usuario navegar en distintas págin
 - Chakra UI
 - Node JS
 - Express JS
+- Jest/Enzyme/chai
 
 
 ## Arrancando
