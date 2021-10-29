@@ -1,19 +1,19 @@
-import { BrowserRouter, Route } from 'react-router-dom'
-import SearchBar from './components/pages/SearchBar'
-import ProductDetail from './components/pages/ProductDetail'
-import ProductList from './components/pages/ProductList'
+import { Route } from 'react-router-dom'
+import SearchBar from './components/pages/SearchBar/SearchBar'
+import ProductDetail from './components/pages/ProductDetail/ProductDetail'
+import ProductList from './components/pages/ProductList/ProductList'
 import Slider from './components/layout/Slider';
-import HomeButtons from './components/layout/HomeButtons';
+import HomeButtons from './components/layout/HomeButtons/HomeButtons';
 
 function App() {
   return (
-    <BrowserRouter>
+    <div>
      <Route  path= '/' component= {SearchBar}/>
      <Route  exact path='/' component={Slider}/>
      <Route  exact path='/' component={HomeButtons}/>
-     <Route  exact path='/items/:id' component={ProductDetail} />
      <Route  exact path='/items' component={ProductList} />
-    </BrowserRouter>
+     <Route  path='/items/:id' component={ProductDetail} />
+    </div>
   );
 }
 

@@ -34,7 +34,7 @@ server.get("/items", async (req, res) => {
     });
     infoNedeed.length > 0
       ? res.status(200).send(infoNedeed)
-      : res.json({
+      : res.status(404).json({
           error: "no hay resultados",
         });
   } catch (error) {
@@ -43,6 +43,7 @@ server.get("/items", async (req, res) => {
 });
 
 server.get("/items/:id", async (req, res) => {
+  try { 
   const id = req.params.id;
   const idApiPromise = axios.get(`https://api.mercadolibre.com/items/${id}`);
   const idDescriptionPromise = axios.get(
@@ -80,9 +81,13 @@ server.get("/items/:id", async (req, res) => {
       path: categoryApi.data.path_from_root,
     },
   };
-  infoNedeed
-    ? res.status(200).send(infoNedeed)
-    : res.status(404).send("No se encontraron resultados");
-});
+     res.status(200).send(infoNedeed)
+    } catch (error) {
+      console.error(error);
+      res.status(404).json({
+        error: "no existe el producto"
+    })
+  }})
+
 
 module.exports = server;

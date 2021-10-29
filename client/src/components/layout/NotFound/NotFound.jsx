@@ -15,9 +15,11 @@ export default function NotFound() {
         width="6rem"
         src="https://res.cloudinary.com/dbduj98i3/image/upload/v1635254238/busqueda_olgwwp.png"
       />
+      <Stack alignItems="flex-start">
       <Text fontSize="25px" fontWeight="medium">
         No hay publicaciones que coincidan con tu búsqueda.
-        <UnorderedList>
+        </Text>
+        <UnorderedList paddingLeft={6}>
           <ListItem>
             <Text fontSize="15px" fontWeight="light">
               Revisá la ortografía de la palabra.
@@ -34,7 +36,7 @@ export default function NotFound() {
             </Text>
           </ListItem>
         </UnorderedList>
-      </Text>
+        </Stack>
     </Stack>
   );
 }

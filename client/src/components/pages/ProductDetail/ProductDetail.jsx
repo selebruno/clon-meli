@@ -1,8 +1,9 @@
 import React, { useEffect } from "react";
-import { useSelector, useDispatch } from "react-redux";
-import { getProductDetail, resetProduct } from "../../redux/actions";
 import { Stack, Text, Image } from "@chakra-ui/react";
-import DetailPriceContainer from "../layout/DetailPriceContainer";
+import { useSelector, useDispatch } from "react-redux";
+import DetailPriceContainer from "../../layout/DetailContainer/DetailPriceContainer";
+import { getProductDetail, resetProduct } from "../../../redux/actions/actions";
+import NotFound from "../../layout/NotFound/NotFound";
 
 export default function ProductDetail(props) {
   const dispatch = useDispatch();
@@ -15,7 +16,9 @@ export default function ProductDetail(props) {
 
   return (
     <>
-      {detail ? (
+      {detail === "Error" ? (
+        <NotFound />
+      ) : detail ? (
         <Stack
           width="100%"
           padding="2rem"

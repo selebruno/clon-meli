@@ -1,0 +1,173 @@
+{
+  "products":[
+    {
+      "author": {
+        "id": 117650892,
+        "address": "Buenos Aires"
+      },
+      "categories": [
+        [
+          "Mates"
+        ]
+      ],
+      "items": [
+        {
+          "id": "MLA908032553",
+          "title": "Mate Acero Inoxidable Termico Premium Bombilla Pico De Loro",
+          "price": {
+            "currency": "ARS",
+            "amount": 1245.11
+          },
+          "picture": "http://http2.mlstatic.com/D_613964-MLA44899250631_022021-O.jpg",
+          "condition": "new",
+          "free_shipping": false
+        }
+      ]
+    },
+    {
+      "author": {
+        "id": 150621817,
+        "address": "Capital Federal"
+      },
+      "categories": [
+        [
+          "Mates"
+        ]
+      ],
+      "items": [
+        {
+          "id": "MLA866868025",
+          "title": "Mate Uruguayo De Calabaza Premium Mas Bombilla Pico De Loro",
+          "price": {
+            "currency": "ARS",
+            "amount": 1234.05
+          },
+          "picture": "http://http2.mlstatic.com/D_790103-MLA47456604737_092021-O.jpg",
+          "condition": "new",
+          "free_shipping": false
+        }
+      ]
+    },
+    {
+      "author": {
+        "id": 496960125,
+        "address": "Buenos Aires"
+      },
+      "categories": [
+        [
+          "Mates"
+        ]
+      ],
+      "items": [
+        {
+          "id": "MLA913894824",
+          "title": "Mate Pampa Camionero Térmico Pack C/ Bombilla + Regalo",
+          "price": {
+            "currency": "ARS",
+            "amount": 1040
+          },
+          "picture": "http://http2.mlstatic.com/D_755110-MLA47155812990_082021-O.jpg",
+          "condition": "new",
+          "free_shipping": false
+        }
+      ]
+    },
+    {
+      "author": {
+        "id": 150621817,
+        "address": "Capital Federal"
+      },
+      "categories": [
+        [
+          "Mates"
+        ]
+      ],
+      "items": [
+        {
+          "id": "MLA883673744",
+          "title": "Mate De Acero Inoxidable Termico Sumate Mas Bombilla Regalo",
+          "price": {
+            "currency": "ARS",
+            "amount": 1699
+          },
+          "picture": "http://http2.mlstatic.com/D_892238-MLA46545226018_062021-O.jpg",
+          "condition": "new",
+          "free_shipping": false
+        }
+      ]
+    }
+  ],
+  "productDetail":
+  {
+    "author": 150621817,
+    "item": {
+      "id": "MLA883673744",
+      "title": "Mate De Acero Inoxidable Termico Sumate Mas Bombilla Regalo",
+      "price": {
+        "currency": "ARS",
+        "amount": 1699
+      },
+      "pictures": [
+        "http://http2.mlstatic.com/D_892238-MLA46545226018_062021-O.jpg",
+        "http://http2.mlstatic.com/D_652643-MLA45744493627_042021-O.jpg",
+        "http://http2.mlstatic.com/D_697059-MLA45744446944_042021-O.jpg",
+        "http://http2.mlstatic.com/D_681903-MLA45744550320_042021-O.jpg",
+        "http://http2.mlstatic.com/D_833479-MLA46101605835_052021-O.jpg",
+        "http://http2.mlstatic.com/D_607602-MLA46101644561_052021-O.jpg",
+        "http://http2.mlstatic.com/D_820027-MLA46101687223_052021-O.jpg",
+        "http://http2.mlstatic.com/D_632442-MLA46545142678_062021-O.jpg",
+        "http://http2.mlstatic.com/D_842535-MLA45744504562_042021-O.jpg",
+        "http://http2.mlstatic.com/D_887271-MLA45744509595_042021-O.jpg",
+        "http://http2.mlstatic.com/D_849605-MLA45744509593_042021-O.jpg",
+        "http://http2.mlstatic.com/D_738357-MLA46101633653_052021-O.jpg",
+        "http://http2.mlstatic.com/D_706254-MLA46101674312_052021-O.jpg",
+        "http://http2.mlstatic.com/D_764500-MLA46101661451_052021-O.jpg",
+        "http://http2.mlstatic.com/D_862140-MLA46545156596_062021-O.jpg",
+        "http://http2.mlstatic.com/D_994564-MLA45744586130_042021-O.jpg",
+        "http://http2.mlstatic.com/D_709563-MLA45744498664_042021-O.jpg",
+        "http://http2.mlstatic.com/D_940957-MLA45744453969_042021-O.jpg",
+        "http://http2.mlstatic.com/D_633348-MLA46101691706_052021-O.jpg",
+        "http://http2.mlstatic.com/D_718861-MLA46101745180_052021-O.jpg",
+        "http://http2.mlstatic.com/D_985232-MLA46101718357_052021-O.jpg",
+        "http://http2.mlstatic.com/D_760041-MLA47698645010_092021-O.jpg",
+        "http://http2.mlstatic.com/D_746891-MLA47698509757_092021-O.jpg",
+        "http://http2.mlstatic.com/D_981815-MLA47698568473_092021-O.jpg",
+        "http://http2.mlstatic.com/D_767935-MLA46431752798_062021-O.jpg",
+        "http://http2.mlstatic.com/D_783124-MLA46431869149_062021-O.jpg",
+        "http://http2.mlstatic.com/D_784601-MLA46431753888_062021-O.jpg",
+        "http://http2.mlstatic.com/D_984793-MLA46431852276_062021-O.jpg"
+      ],
+      "condition": "new",
+      "free_shipping": false,
+      "sold_quantity": 1205,
+      "available_quantity": 1,
+      "category_id": "MLA392282",
+      "description": "MATE TÉRMICO ACERO INOXIDABLE SUMATE VIAJERO\n\n-Mate Acero Inoxidable\n-Doble capa acero\n-Térmico, conserva la temperatura\n-Hands Protected, no se calienta en la mano\n-Cómodo de usar\n-Fácil de lavar y limpiar\n-Para frío o calor\n-Medidas: 9 x 8 (Altura x Diámetro boca)\n\n////////////////////////////////////////////////////////////////\n\nTAMBIÉN TENEMOS VENTAS MAYORISTAS\n\nEn TIENDA DOS AMIGOS tenemos sistema mayorista, con las mejores opciones y los mejores precios del mercado.\nConsulta por ventas mayoristas, convertite en distribuidor oficial de nuestros productos.\n\n////////////////////////////////////////////////////////////////\n\nENVÍOS A TODO EL PAÍS\n\nRecibí tu compra en cualquier lugar del país. Elegí Mercado Envíos al momento de efectuar tu compra, hacemos despacho todos los días.\nCalculá el costo del envío antes de comprar ingresando el Código Postal de tu domicilio en la parte superior de la publicación.\n\n---------------------------------\n\nENVÍO FLEX EN EL DÍA\n\nSi estás dentro de nuestras zonas de cobertura, podrás elegir el envío Flex rápido en el día. El reparto es de 10 a 21 hs. \n\n////////////////////////////////////////////////////////////////\n\nMEDIOS DE PAGO:\n\nPodés abonar con todos los medios de pago habilitados con MERCADO PAGO:\n* Tarjeta de Crédito\n* Tarjeta de Débito\n* Pago Fácil\n* Rapi Pago\n* Provincia Net\n* Cobro Express\n* LINK\n* Carga Virtual\n\n¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯\nEmitimos Factura A y B.\nEn el caso de necesitar Factura A por favor comunicalo por el chat interno de Mercado Libre una vez realizada la compra.\n\n////////////////////////////////////////////////////////////////\n\nATENCIÓN:\n¡PRECIO DE SUPER OFERTA!\n\nComprá ahora y asegurate tu unidad a este precio\n¡Si podés ver esta publicación es porque TENEMOS STOCK, no hace falta que nos consultes!\n\n¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯\nComprá con tranquilidad\n\nHacenos todas las consultas que tengas, para nosotros es un placer ayudarte\n\nEstamos Online para todo lo que necesites\n\nTIENDA DOS AMIGOS"
+    },
+    "categories": {
+      "name": "Mates",
+      "path": [
+        {
+          "id": "MLA1574",
+          "name": "Hogar, Muebles y Jardín"
+        },
+        {
+          "id": "MLA1592",
+          "name": "Bazar y Cocina"
+        },
+        {
+          "id": "MLA436296",
+          "name": "Café, Té y Mate"
+        },
+        {
+          "id": "MLA392274",
+          "name": "Mates y Accesorios"
+        },
+        {
+          "id": "MLA392282",
+          "name": "Mates"
+        }
+      ]
+    }
+  }
+}

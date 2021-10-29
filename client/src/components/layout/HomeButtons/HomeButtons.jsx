@@ -7,10 +7,9 @@ export default function HomeButtons() {
       border="1px solid #D6d6d6"
       padding={5}
       direction="row"
-      spacing={20}
       width="100%"
       alignItems="center"
-      justifyContent="center"
+      justifyContent="space-around"
       marginTop="2rem"
     >
       <Stack cursor="pointer" alignItems="center">

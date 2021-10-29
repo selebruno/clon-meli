@@ -14,7 +14,7 @@ import { AiOutlineSearch, AiOutlineDown } from "react-icons/ai";
 import { GoLocation } from "react-icons/go";
 import { IoCartOutline } from "react-icons/io5";
 import { Link, useHistory } from "react-router-dom";
-import { resetDetail, resetProduct, searchUpdate } from "../../redux/actions";
+import { resetDetail, resetProduct } from "../../../redux/actions/actions";
 import { useDispatch } from "react-redux";
 
 export default function SearchBar() {
@@ -29,7 +29,6 @@ export default function SearchBar() {
   function handleSubmit(e) {
     e.preventDefault();
     dispatch(resetDetail());
-    dispatch(searchUpdate());
     history.push(`/items?search=${input}`);
   }
 
