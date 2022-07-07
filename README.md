@@ -64,7 +64,7 @@ http://localhost:3000/
 
 ## Notas
 
-La estructura del backend fue modificada respecto a los requerimientos originales, ya que algunos datos no estaban disponibles y otros los consideré necesarios para desarrollar las vistas de la aplicación. La misma se encuentra organizada de la siguiente manera:
+La estructura del backend se encuentra organizada de la siguiente manera:
 
 ### /api/items?q=:query
 
